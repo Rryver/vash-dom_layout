@@ -1,0 +1,263 @@
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+*,
+*::after,
+*::before {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+body {
+  padding: 0;
+  margin: 0;
+}
+a {
+  text-decoration: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  padding: 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+ul,
+li {
+  display: block;
+  text-decoration: none;
+  padding: 0;
+  margin: 0;
+  color: black;
+}
+ul[class],
+ol[class] {
+  padding: 0;
+}
+ul[class] {
+  list-style: none;
+}
+section {
+  background: #FFFFFF;
+}
+img {
+  max-width: 100%;
+}
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+html,
+body {
+  height: 100%;
+  font-size: 18px;
+  font-family: 'Roboto', serif;
+}
+.wrapper {
+  position: relative;
+  min-width: 320px;
+  min-height: 100vh;
+  overflow: hidden;
+  background-color: #fff;
+}
+.container-wide {
+  max-width: 1470px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.vk-link {
+  color: #0b5ed7;
+}
+.btn-call {
+  display: inline-block;
+  border: 1px solid #A2A2A2;
+  outline: none;
+  background-color: #FF1B00;
+  border-radius: 20px;
+  padding: 7px 25px 7px 25px;
+  color: #FFFFFF;
+  -webkit-transition: background-color 0.4s;
+  -o-transition: background-color 0.4s;
+  transition: background-color 0.4s;
+}
+.btn-call:hover {
+  background-color: #E31800;
+  color: #FFFFFF;
+}
+.text-color-red {
+  color: #FF1B00;
+}
+.link-text {
+  text-decoration: none;
+  color: #1B1818;
+}
+.link-text:hover {
+  color: #1B1818;
+}
+@media screen and (min-width: 1400px) {
+  .container {
+    max-width: 1140px;
+  }
+}
+.heading,
+.heading-36,
+.heading-24,
+.heading-18,
+.heading-14,
+.main-menu__item {
+  font-weight: 700;
+  color: #1B1818;
+}
+.banner-caption,
+.main-slide__title {
+  font-weight: 700;
+  color: #FFFFFF;
+  font-size: 64px;
+  text-stroke: 1px rgba(0, 0, 0, 0.31);
+  -webkit-text-stroke: 1px rgba(0, 0, 0, 0.31);
+  text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+}
+.heading-36 {
+  font-size: 36px;
+}
+.heading-24,
+.main-menu__item {
+  font-size: 24px;
+}
+.heading-18 {
+  font-size: 18px;
+}
+.heading-14 {
+  font-size: 14px;
+}
+.header {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  margin-top: 40px;
+  z-index: 100;
+}
+.header__background-blur {
+  background: rgba(255, 255, 255, 0.42);
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+}
+.header__btn-call {
+  margin-left: 60px;
+}
+.header-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 11px;
+  padding-bottom: 11px;
+}
+.main-menu__item {
+  display: inline-block;
+  text-decoration: none;
+  padding: 0 20px 0 20px;
+}
+.main-menu__link {
+  color: inherit;
+}
+.main-menu__link:hover {
+  color: inherit;
+}
+.main-menu__link::after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 2px;
+  background: transparent;
+  -webkit-transition: background-color 0.3s;
+  -o-transition: background-color 0.3s;
+  transition: background-color 0.3s;
+}
+.main-menu__link:hover::after {
+  width: 100%;
+  background: #E31800;
+}
+.main-slide {
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 750px;
+}
+.main-slide__wrapper {
+  padding: 280px 150px 0 150px;
+}
+.main-slide__title-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 300px;
+}
+.main-slide__title {
+  display: block;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+.main-slide__btn {
+  margin-top: 20px;
+}
+.slick-dots {
+  bottom: 25px !important;
+}
+.slick-dots > li > button::before {
+  font-size: 20px;
+  color: #F6F6F6;
+  opacity: 0.75;
+}
+.slick-dots > li > button::before {
+  font-size: 20px;
+}
+.slick-dots > li.slick-active > button::before {
+  color: #FF1B00;
+}
+.about {
+  margin-top: 75px;
+}
+.footer {
+  margin-top: 50px;
+  text-align: center;
+  background-color: #F6F6F6;
+  padding: 15px 0 15px 0  ;
+}
+.footer__content {
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.footer__text {
+  margin-top: 11px;
+}
