@@ -44,8 +44,6 @@ function scripts() {
         //'node_modules/jquery/dist/jquery.js',
         'web/js/main.js',
         //'web/js/image-plugin.js',
-        'web/js/modal-trip.js',
-        'web/js/header.js'
     ])
         .pipe(concat('main.min.js'))
         .pipe(uglify())

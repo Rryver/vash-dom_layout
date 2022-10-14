@@ -228,6 +228,7 @@ body {
   display: block;
   -ms-flex-item-align: end;
       align-self: flex-end;
+  text-shadow: 0px 0px 10px black;
 }
 .main-slide__btn {
   margin-top: 20px;
