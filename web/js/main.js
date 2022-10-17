@@ -34,6 +34,12 @@
         });
     }
 
+    function fancyboxOurWorks () {
+        $('[data-fancybox="gallery"]').fancybox({
+            // Options will go here
+        });
+    }
+
     // Initializing all scripts
     $(document).ready(function () {
         mainSlider();

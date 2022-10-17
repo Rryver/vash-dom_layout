@@ -37,7 +37,7 @@ body {
     border: 1px solid @color-theme-dark-grey;
     outline: none;
     background-color: @color-theme-red;
-    border-radius: 20px;
+    border-radius: @border-radius-common;
     padding: 7px 25px 7px 25px;
     color: @color-text-light;
     transition: background-color .4s;
@@ -61,6 +61,14 @@ body {
     }
 }
 
+.link-underline {
+    color: @color-text-dark;
+    text-decoration: underline;
+
+    &:hover {
+        color: @color-text-dark;
+    }
+}
 
 @media screen and (min-width: 1400px) {
     .container {
