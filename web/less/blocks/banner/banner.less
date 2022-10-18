@@ -6,6 +6,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     min-height: 750px;
+    background-color: @color-theme-light;
 
     &__wrapper {
         padding: 280px 150px 0 150px;
@@ -44,4 +45,21 @@
 
 .slick-dots > li.slick-active > button::before {
     color: @color-theme-red;
+}
+
+
+.banner-secondary {
+    & .main-slide {
+        min-height: 465px;
+
+        &__wrapper {
+            padding: 140px 0 0 0;
+        }
+
+        &__title-wrap {
+            display: flex;
+            height: 200px;
+            justify-content: center;
+        }
+    }
 }

@@ -8,6 +8,10 @@ body {
     //letter-spacing: 1px;
 }
 
+button:focus {
+    box-shadow: unset;
+}
+
 //body section {
 //    background-color: @color-dark;
 //}
@@ -32,6 +36,20 @@ body {
     color: #0b5ed7;
 }
 
+.vk-icon {
+    width: 40px;
+    height: 40px;
+
+    //&:hover circle {
+    //    fill: red;
+    //}
+}
+
+.vk-icon-small {
+    width: 20px;
+    height: 12px;
+}
+
 .btn-call {
     display: inline-block;
     border: 1px solid @color-theme-dark-grey;
@@ -45,6 +63,19 @@ body {
     &:hover {
         background-color: @color-theme-red-dark;
         color: @color-text-light;
+    }
+}
+
+.btn-call_grey {
+    &:extend(.btn-call);
+    background-color: #6c757d;
+    border-color: #6c757d;
+    color: @color-text-light;
+
+    &:hover {
+        color: @color-text-light;
+        background-color: #5c636a;
+        border-color: #565e64;
     }
 }
 
@@ -69,6 +100,51 @@ body {
         color: @color-text-dark;
     }
 }
+
+.section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.map-icon {
+    width: auto;
+    height: 20px;
+    margin-right: 1px;
+    vertical-align: sub;
+}
+
+.form-default {
+    & input, textarea {
+        border-radius: @border-radius-inputs;
+    }
+
+    & .form-group {
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+}
+
+.layout-secondary {
+    margin-top: 140px;
+}
+
+.form-modal-call {
+    & .form-group {
+        margin-bottom: 15px;
+    }
+}
+
+.btn-text {
+    display: inline-block;
+    outline: none;
+    border: none;
+    background: transparent;
+    text-decoration: underline;
+}
+
 
 @media screen and (min-width: 1400px) {
     .container {

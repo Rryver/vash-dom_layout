@@ -1,0 +1,88 @@
+.promo-all {
+    &__list {}
+}
+
+.promo-list {
+    display: flex;
+    justify-content: space-between;
+
+    &__card {}
+}
+
+.promo-card {
+    position: relative;
+    border-radius: @border-radius-common;
+    overflow: hidden;
+    max-width: 360px;
+    height: 360px;
+
+    //&:hover {
+    //    cursor: pointer;
+    //}
+
+    &:hover .promo-card__preview {
+        display: none;
+    }
+
+    &:hover .promo-card__info {
+        display: flex;
+    }
+
+    &__content {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 30px 35px 30px 35px;
+        height: 100%;
+        width: 100%;
+
+        &::after {
+            display: block;
+            position: absolute;
+            left: 0;
+            top: 0;
+            content: "";
+            background: #000000;
+            opacity: .25;
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    &__preview {
+
+    }
+
+    &__info {
+        display: none;
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background: @color-text-light;
+        opacity: .95;
+    }
+
+    &__title {
+        &:extend(.heading-24);
+        position: relative;
+        z-index: 10;
+        color: @color-text-light;
+    }
+
+    &__text {
+        position: relative;
+        color: @color-text-light;
+        z-index: 10;
+        margin-top: 10px;
+    }
+
+    &__btn {
+        position: relative;
+        align-self: flex-start;
+        z-index: 10;
+        color: @color-text-light;
+    }
+}

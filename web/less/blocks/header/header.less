@@ -19,7 +19,7 @@
 
     &__city {
         &:extend(.text-regular-16);
-        margin-left: 20px;
+        margin-right: 20px;
     }
 }
 
@@ -64,5 +64,24 @@
             background: @color-theme-red-dark;
             //transition: width .3s;
         }
+    }
+
+    &__link.active::after {
+        background: @color-theme-red-dark;
+    }
+}
+
+.header-secondary {
+    margin-top: 0;
+
+    & .container-wide {
+        background-color: @color-theme-light;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+    }
+
+    & .header__background-blur {
+        background: unset;
+        backdrop-filter: unset;
     }
 }
