@@ -59,11 +59,43 @@
         });
     }
 
+    function promoCardToggleInfo() {
+        $(".promo-all .promo-card .promo-card__preview .promo-card__btn").on("click", function (e) {
+            e.preventDefault();
+
+            let promoCard = $(this).parent().parent();
+            promoCard.find(".promo-card__preview").toggleClass("promo-card__hidden");
+            promoCard.find(".promo-card__info").toggleClass("promo-card__hidden");
+        })
+    }
+
+    function promoCardOpenModalEvent () {
+        $(".promo-card .promo-card__info .promo-card__btn").on("click", function (e) {
+            e.preventDefault();
+
+            let promoTitle = $(this).parent().find(".promo-card__title").html();
+
+            $("#modalPromo #promoModalLabel").html(promoTitle);
+        })
+    }
+
+    function mainMenuToggleVisibility() {
+        $(".header__menu-button.button-hamburger, .main-menu__button-close").on("click", function (e) {
+            e.preventDefault();
+
+            $(".header__menu").toggleClass("main-menu_visible");
+        })
+    }
+
     // Initializing all scripts
     $(document).ready(function () {
         mask();
+        mainMenuToggleVisibility();
 
         mainSlider();
         promoSlider();
+
+        promoCardToggleInfo();
+        promoCardOpenModalEvent();
     });
 })(jQuery);

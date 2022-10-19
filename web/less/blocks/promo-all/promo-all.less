@@ -1,5 +1,8 @@
 .promo-all {
     &__list {}
+    &__btn-wrap {
+        text-align: center;
+    }
 }
 
 .promo-list {
@@ -20,13 +23,13 @@
     //    cursor: pointer;
     //}
 
-    &:hover .promo-card__preview {
-        display: none;
-    }
-
-    &:hover .promo-card__info {
-        display: flex;
-    }
+    //&:hover .promo-card__preview {
+    //    display: none;
+    //}
+    //
+    //&:hover .promo-card__info {
+    //    display: flex;
+    //}
 
     &__content {
         position: relative;
@@ -55,7 +58,7 @@
     }
 
     &__info {
-        display: none;
+        display: flex;
         position: absolute;
         left: 0;
         top: 0;
@@ -85,4 +88,8 @@
         z-index: 10;
         color: @color-text-light;
     }
+}
+
+.promo-card__hidden {
+    display: none !important;
 }

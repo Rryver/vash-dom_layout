@@ -181,6 +181,33 @@ button:focus {
   background: transparent;
   text-decoration: underline;
 }
+.button-hamburger {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  height: 20px;
+  vertical-align: bottom;
+  background: transparent;
+  border: none;
+  padding: 0;
+  width: 30px;
+}
+.button-hamburger:hover {
+  cursor: pointer;
+}
+.button-hamburger__line {
+  display: inline-block;
+  height: 2px;
+  background: #828282;
+  width: 100%;
+}
 @media screen and (min-width: 1400px) {
   .container {
     max-width: 1140px;
@@ -306,6 +333,9 @@ button:focus {
 .m-b-50 {
   margin-bottom: 50px;
 }
+.text-align-left {
+  text-align: left;
+}
 .heading,
 .heading-36,
 .heading-24,
@@ -411,8 +441,32 @@ button:focus {
 .header__btn-call {
   margin-left: 20px;
 }
+.header__btns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.header__btns_mobile {
+  display: none;
+}
 .header__city {
   margin-right: 20px;
+}
+.header__menu-button {
+  display: none;
+  margin-left: 30px;
 }
 .header-wrapper {
   display: -webkit-box;
@@ -459,6 +513,16 @@ button:focus {
 .main-menu__link.active::after {
   background: #E31800;
 }
+.main-menu_visible {
+  right: 0px !important;
+}
+.main-menu__btn-close-helper {
+  display: none;
+  padding: 20px;
+}
+.main-menu__button-close {
+  display: none;
+}
 .header-secondary {
   margin-top: 0;
 }
@@ -471,6 +535,69 @@ button:focus {
   background: unset;
   -webkit-backdrop-filter: unset;
           backdrop-filter: unset;
+}
+@media screen and (max-width: 1200px) {
+  .header__menu-button {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .header__btn-call {
+    display: none;
+  }
+  .header__btns_mobile {
+    display: block;
+    margin-top: 20px;
+    text-align: center;
+  }
+  .header__btns_mobile > * {
+    display: block;
+    margin-bottom: 20px;
+    margin-right: 0;
+  }
+  .header__btns_mobile .header__btn-call {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .header.header-secondary .main-menu {
+    top: 0;
+  }
+  .main-menu {
+    position: fixed;
+    z-index: 10;
+    right: -250px;
+    top: -40px;
+    width: 250px;
+    height: 100vh;
+    text-align: center;
+    background: #F2F2F2;
+    overflow-y: auto;
+    -webkit-transition: all ease 0.4s;
+    -o-transition: all ease 0.4s;
+    transition: all ease 0.4s;
+  }
+  .main-menu__list:after {
+    display: block;
+    margin-top: 10px;
+    content: "";
+    height: 1px;
+    background: #FF1B00;
+  }
+  .main-menu__item {
+    display: block;
+    margin-bottom: 20px;
+  }
+  .main-menu__btn-close-helper {
+    display: block;
+  }
+  .main-menu__button-close {
+    display: inline-block;
+  }
+}
+@media screen and (max-width: 576px) {
+  .header__btns_pc .header__city {
+    display: none;
+  }
 }
 .main-slide {
   background-repeat: no-repeat;
@@ -809,6 +936,9 @@ button:focus {
 .slider-controls__btn-right {
   margin-left: 15px;
 }
+.promo-all__btn-wrap {
+  text-align: center;
+}
 .promo-list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -823,14 +953,6 @@ button:focus {
   overflow: hidden;
   max-width: 360px;
   height: 360px;
-}
-.promo-card:hover .promo-card__preview {
-  display: none;
-}
-.promo-card:hover .promo-card__info {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
 }
 .promo-card__content {
   position: relative;
@@ -860,7 +982,9 @@ button:focus {
   height: 100%;
 }
 .promo-card__info {
-  display: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   position: absolute;
   left: 0;
   top: 0;
@@ -886,6 +1010,9 @@ button:focus {
       align-self: flex-start;
   z-index: 10;
   color: #FFFFFF;
+}
+.promo-card__hidden {
+  display: none !important;
 }
 .footer {
   text-align: center;
