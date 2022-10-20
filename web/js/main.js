@@ -33,6 +33,7 @@
                 // nextArrow: next,
                 autoplay: false,
                 autoplaySpeed: 5000,
+                fade: true
             });
         });
     }
@@ -49,6 +50,7 @@
                 nextArrow: next,
                 autoplay: false,
                 autoplaySpeed: 5000,
+                fade: true,
             });
         });
     }

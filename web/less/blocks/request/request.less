@@ -61,3 +61,47 @@
         border: none;
     }
 }
+
+@media screen and (max-width: 992px){
+    .request {
+        text-align: center;
+        &__wrap {
+            padding: 20px;
+        }
+    }
+
+    .request-form {
+        width: 100%;
+        text-align: center;
+        max-width: 400px;
+
+        & .form-group {
+            display: block;
+            width: 100%;
+            margin-bottom: 15px;
+        }
+
+        & input {
+            display: block;
+            width: 100%;
+            max-width: 100%;
+        }
+    }
+}
+
+@media screen and (max-width: 576px){
+    .request {
+        &__wrap {
+            padding: 20px;
+        }
+
+        &__title {
+            & h2 {
+                font-size: 36px;
+            }
+        }
+    }
+    .request-form {
+
+    }
+}
