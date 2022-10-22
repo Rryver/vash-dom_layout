@@ -8,6 +8,7 @@
 .promo-list {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 
     &__card {}
 }
@@ -17,7 +18,8 @@
     border-radius: @border-radius-common;
     overflow: hidden;
     max-width: 360px;
-    height: 360px;
+    min-height: 360px;
+    margin-bottom: 15px;
 
     //&:hover {
     //    cursor: pointer;
@@ -92,4 +94,37 @@
 
 .promo-card__hidden {
     display: none !important;
+}
+
+@media screen and (max-width: 1200px){
+    .promo-list {
+        & .promo-card {
+            max-width: 300px;
+        }
+    }
+}
+
+@media screen and (max-width: 992px){
+    .promo-list {
+        & .promo-card {
+            max-width: 340px;
+        }
+    }
+}
+
+@media screen and (max-width: 768px){
+    .promo-list {
+        & .promo-card {
+            max-width: 100%;
+            min-height: 290px;
+        }
+    }
+}
+
+@media screen and (max-width: 576px){
+    .promo-list {
+        & .promo-card {
+            max-width: 100%;
+        }
+    }
 }

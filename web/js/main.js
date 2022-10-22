@@ -29,6 +29,7 @@
                 slidesToShow: 1,
                 slidesToScroll: 1,
                 dots: true,
+                arrows:  false,
                 // prevArrow: prev,
                 // nextArrow: next,
                 autoplay: false,

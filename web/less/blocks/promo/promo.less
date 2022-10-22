@@ -77,7 +77,7 @@
         max-width: 800px;
         //box-shadow: 10px 10px 12px rgba(0, 0, 0, 0.25);
         //box-shadow: 15px 15px 8px rgba(0, 0, 0, 0.25);
-        box-shadow: 6px 6px 8px rgba(0, 0, 0, 0.25);
+        box-shadow: 0 0 8px rgba(0, 0, 0, 0.45);
         background: @color-white;
     }
 
@@ -132,9 +132,19 @@
     .promo-slide {
         text-align: center;
         &__info {
-            left: auto;
-            right: auto;
-            width: 100%;
+            //left: 10px;
+            //right: 10px;
+            width: 90%;
+        }
+    }
+}
+
+@media screen and (max-width: 400px){
+    .promo-slide {
+        text-align: center;
+        &__info {
+            //left: 10px;
+            right: 10px;
         }
     }
 }

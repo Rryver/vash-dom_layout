@@ -8,6 +8,10 @@ body {
     //letter-spacing: 1px;
 }
 
+p {
+    margin-bottom: 1rem;
+}
+
 button:focus {
     box-shadow: unset;
 }
@@ -120,6 +124,7 @@ button:focus {
     }
 
     & .form-group {
+        margin-bottom: 15px;
 
         &:last-child {
             margin-bottom: 0;
@@ -171,6 +176,18 @@ button:focus {
     height: 2px;
     background: #828282;
     width: 100%;
+}
+
+.form-contacts {
+    padding: 20px;
+    background: @color-theme-extra-light;
+    border-radius: @border-radius-common;
+
+    &__title {
+        display: block;
+        &:extend(.heading-24);
+        margin-bottom: 10px;
+    }
 }
 
 @media screen and (min-width: 1400px) {
