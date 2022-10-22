@@ -32,8 +32,8 @@
                 arrows:  false,
                 // prevArrow: prev,
                 // nextArrow: next,
-                autoplay: false,
-                autoplaySpeed: 5000,
+                autoplay: true,
+                autoplaySpeed: 3000,
                 fade: true
             });
         });
