@@ -82,6 +82,16 @@
         })
     }
 
+    function promoSliderOpenModalEvent () {
+        $(".promo-slider__slide .promo-slide__link").on("click", function (e) {
+            e.preventDefault();
+
+            let promoTitle = $(this).parent().find(".promo-slide__title").html();
+
+            $("#modalPromo #promoModalLabel").html(promoTitle);
+        })
+    }
+
     function mainMenuToggleVisibility() {
         $(".header__menu-button.button-hamburger, .main-menu__button-close").on("click", function (e) {
             e.preventDefault();
@@ -100,5 +110,6 @@
 
         promoCardToggleInfo();
         promoCardOpenModalEvent();
+        promoSliderOpenModalEvent();
     });
 })(jQuery);
